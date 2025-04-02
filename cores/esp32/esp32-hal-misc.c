@@ -307,7 +307,7 @@ void initArduino() {
   }
 #if defined(CONFIG_BT_ENABLED) && SOC_BT_SUPPORTED
   if (!btInUse()) {
-    esp_bt_controller_mem_release(ESP_BT_MODE_BTDM);
+    // esp_bt_controller_mem_release(ESP_BT_MODE_BTDM);
   }
 #endif
   init();
